@@ -9,7 +9,6 @@ import Button from "@/app/components/Button/Button";
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [visibility, setVisibility] = useState(true);
 
     return (
         <div className={styles.container}>
@@ -21,22 +20,16 @@ const Login = () => {
                     type="text"
                     placeholder="მომხმარებლის სახელი"
                     value={username}
+                    general={true}
                     onChange={setUsername}
                 />
                 <div className={styles.passwordInput}>
                     <Input
-                        type={visibility ? 'password' : 'text'}
                         placeholder="პაროლი"
                         value={password}
+                        password={true}
                         onChange={setPassword}
                     />
-                    <div className={styles.visibility} onClick={() => setVisibility(!visibility)}>
-                        <Image src={visibility ?
-                            './icons/visibility.svg' :
-                            './icons/disability.svg'}
-                               alt={'password-visibility'} width={24} height={24}/>
-
-                    </div>
                 </div>
             </div>
             <Input

@@ -16,8 +16,17 @@ const LinkWithIcon = (props: Props) => {
             </div>
             {
                 props.medium ?
-                    <Image src={props.icon} height={9} width={9} alt="icon for new windows"/> :
-                    <Image src={props.icon} height={6} width={6} alt="icon for new windows"/>
+                    <img src={props.icon}
+                           style={{
+                               width: "0.613vw",
+                               height: "0.613vw",
+                           }} alt="icon for new windows"/> :
+                    <img src={props.icon}
+                         style={{
+                             width: "0.408vw",
+                             height: "0.408vw",
+                         }}
+                         alt="icon for new windows"/>
 
             }
         </div>

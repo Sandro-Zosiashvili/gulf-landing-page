@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  gap: 36px;
-  font-size: 14px;
+  gap: 2.451vw;
+  font-size: 0.953vw;
   width: fit-content;
 }
 
@@ -14,9 +14,9 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
+  bottom: -0.204vw;
   width: 0;
-  height: 1px;
+  height: 0.129vh;
   background-color: currentColor; /* ხაზის ფერი იგივე რაც ტექსტის */
   transition: width 0.2s ease;
 }

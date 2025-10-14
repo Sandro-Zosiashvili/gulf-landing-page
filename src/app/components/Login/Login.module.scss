@@ -5,36 +5,32 @@
   border-radius: 48px;
   width: fit-content;
   height: 100%;
-  padding: 40px 55px;
+  padding: 2.723vw 3.744vw;
+
 
 
 }
 .loginTitle {
-  font-size: 16px;
+  font-size: 1.089vw;
   font-weight: bold;
-  margin-bottom: 33px;
+  margin-bottom: 2.246vw;
 
 }
 .inputGap {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 16px;
+  gap: 0.817vw;
+  margin-bottom: 1.089vw;
 }
 .passwordInput {
   position: relative;
 }
-.visibility {
-  position: absolute;
-  right: 10px;
-  top: 12px;
-  cursor: pointer;
-}
+
 
 .button {
-  margin-top: 50px;
+  margin-top: 3.404vw;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.361vw;
 }

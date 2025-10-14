@@ -1,9 +1,8 @@
 
-
 .container {
+  max-width: 81.688vw;
   width: 100%;
-  max-width: 1200px;
-  height: 53px;
+  height: 6.83vh;
   margin: 0 auto;
   //background-color: red;
   display: flex;
@@ -14,13 +13,13 @@
 .containerLeftContent {
   display: flex;
   align-items: center;
-  font-size: 12px;
-  gap: 20px;
+  font-size: 0.817vw;
+  gap: 1.361vw;
 }
 
 .headerRightContent {
   display: flex;
   align-items: center;
-  font-size: 12px;
-  gap: 20px;
+  font-size: 0.817vw;
+  gap: 1.361vw;
 }

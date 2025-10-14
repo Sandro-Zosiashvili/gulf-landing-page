@@ -88,7 +88,7 @@ const MySwiper = () => {
                 <div className="custom-prev">
                     <Image src={'./icons/prev.svg'} width={11} height={18} alt={'Previous'}/>
                 </div>
-                <div className="custom-next">
+                <div className="custom-next"  >
                     <Image src={'./icons/next.svg'} width={11} height={18} alt={'Previous'}/>
                 </div>
             </div>

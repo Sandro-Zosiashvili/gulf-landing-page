@@ -3,15 +3,25 @@ import Image from 'next/image';
 
 const Logo = () => {
 
-
+    // width={37} height={34}
     return (
         <div className={styles.container}>
             <div>
-                <Image src={"./icons/gulf-logo.svg"} width={37} height={34} alt={'Main Logo'}/>
+                <img src={"./icons/gulf-logo.svg"}
+                     style={{
+                         width: '2.519vw',
+                         height: '4.381vh',
+                     }}
+                     alt={'Main Logo'}/>
             </div>
             <div className={styles.middleLine}></div>
             <div>
-                <Image src={"./icons/gulf-title.svg"} width={120} height={31} alt={'Main Logo'}/>
+                <img src={"./icons/gulf-title.svg"}
+                     style={{
+                         width: '8.169vw',
+                         height: '3.995vh',
+                     }}
+                     alt={'Main Logo'}/>
             </div>
         </div>
     )
