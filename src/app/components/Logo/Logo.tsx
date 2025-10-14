@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 const Logo = () => {
 
-    // width={37} height={34}
     return (
         <div className={styles.container}>
             <div>

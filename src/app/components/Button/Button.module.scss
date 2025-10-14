@@ -1,14 +1,17 @@
 .container {
   border: none;
   background: #FFFFFF;
-  //width: fit-content;
   width: 100%;
-  padding: 1.225vw 2.587vw;
+  height: 3.75vw;
   border-radius: 50px;
   font-weight: bolder;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1.089vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.089vw;
 }
 
 .dark {
@@ -41,4 +44,14 @@
     background-color: #dfe3e9;
     transform: translateY(0);
   }
+}
+
+.buttonIcon {
+  width: 2vw;
+  height: 2vw;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }

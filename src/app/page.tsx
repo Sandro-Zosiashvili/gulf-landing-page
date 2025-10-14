@@ -7,20 +7,16 @@ import Header from "@/app/components/Header/Header";
 import Swiper from 'swiper';
 import MySwiper from "@/app/components/Swiper/Swiper";
 import Login from "@/app/components/Login/Login";
+import Herosection from "@/app/components/HeroSection/Herosection";
+import Button from "@/app/components/Button/Button";
+import PricingSection from "@/app/components/PricingSection/Pricingsection";
 
 
 export default function Home() {
     return (
         <div className={styles.page}>
-            <Header/>
-            <Menu/>
-            <div className={styles.firstLayout}>
-                <div className={styles.swiper}>
-                    <MySwiper />
-                </div>
-                <Login/>
-            </div>
-
+            <Herosection/>
+            <PricingSection/>
         </div>
     );
 }

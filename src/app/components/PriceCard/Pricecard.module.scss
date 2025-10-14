@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  background-color: #f7f9fb;
+  padding: 30px 20px;
+  border-radius: 20px;
+  overflow-x: scroll;
+  justify-content:  space-between;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.priceCard {
+  background-color: #f7f9fb;
+  border-left: 1px solid #eaf0f8;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding-left: 10px;
+}
+.priceCardNoneBorder {
+  background-color: #f7f9fb;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding-left: 11px;
+}
+.price {
+  font-size: 18px;
+  font-weight:  bold;
+}
+
+.priceTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

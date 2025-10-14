@@ -3,25 +3,26 @@
   flex-direction: column;
   border: 1px solid #f2f2f2;
   border-radius: 48px;
-  width: fit-content;
-  height: 100%;
+  width: 26.25vw;
+  height: 32.1527777778vw;
   padding: 2.723vw 3.744vw;
 
-
-
 }
+
 .loginTitle {
   font-size: 1.089vw;
   font-weight: bold;
   margin-bottom: 2.246vw;
 
 }
+
 .inputGap {
   display: flex;
   flex-direction: column;
   gap: 0.817vw;
   margin-bottom: 1.089vw;
 }
+
 .passwordInput {
   position: relative;
 }
