@@ -1,4 +1,3 @@
-"use client"
 import styles from './Logo.module.scss';
 import Image from 'next/image';
 

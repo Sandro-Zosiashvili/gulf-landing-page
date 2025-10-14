@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f2f2f2;
+  border-radius: 48px;
+  width: fit-content;
+  height: 100%;
+  padding: 40px 55px;
+
+
+}
+.loginTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 33px;
+
+}
+.inputGap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.passwordInput {
+  position: relative;
+}
+.visibility {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

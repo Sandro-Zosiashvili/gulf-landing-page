@@ -1,8 +1,10 @@
 import styles from './MenuItem.module.scss';
+import Linkwithicon from "@/app/components/Linkwithicon/Linkwithicon";
 
 interface Item {
     title: string;
     path: string;
+    icon: string;
 }
 
 const MenuItem = () => {
@@ -10,7 +12,8 @@ const MenuItem = () => {
     const data = [
         {
             title: 'GULF CARD',
-            path: ''
+            path: '',
+            icon: "/icons/language-drop-down-icon.svg"
         }, {
             title: 'საერთაშორისო ბარათები',
             path: ''
@@ -28,14 +31,15 @@ const MenuItem = () => {
 
     return (
         <div className={styles.container}>
-            {
-                data.map((item: Item, index: number) => (
-                    <div key={index}>
-                        {item.title}
-                    </div>
-                ))
-            }
-
+            {data.map((item, index) => (
+                <div className={styles.menuItem} key={index}>
+                    {item.icon ? (
+                        <Linkwithicon title={item.title} icon={item.icon} medium/>
+                    ) : (
+                        item.title
+                    )}
+                </div>
+            ))}
         </div>
     )
 }

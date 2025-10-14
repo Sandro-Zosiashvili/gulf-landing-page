@@ -1,9 +1,9 @@
 import styles from './Menu.module.scss';
-import Menuitem from "@/app/components/MenuItem/Menuitem";
+import Menuitem from "../MenuItem/Menuitem";
 import Logo from "@/app/components/Logo/Logo";
 
 
-const Menu = (props: any) => {
+const Menu = () => {
 
     return (
         <div className={styles.container}>

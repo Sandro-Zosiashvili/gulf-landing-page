@@ -4,3 +4,23 @@
   font-size: 14px;
   width: fit-content;
 }
+
+.menuItem {
+  position: relative;
+  cursor: pointer;
+}
+
+.menuItem::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background-color: currentColor; /* ხაზის ფერი იგივე რაც ტექსტის */
+  transition: width 0.2s ease;
+}
+
+.menuItem:hover::after {
+  width: 100%;
+}

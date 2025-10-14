@@ -1,0 +1,45 @@
+.container {
+  border: none;
+  background: #FFFFFF;
+  //width: fit-content;
+  width: 100%;
+  padding: 18px 38px;
+  border-radius: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+
+}
+
+.dark {
+  background-color: #192a40;
+  color: white;
+
+  &:hover {
+    background-color: #2a3a50;
+    box-shadow: 0 4px 12px rgba(25, 42, 64, 0.3);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    background-color: #1a2b41;
+    transform: translateY(0);
+  }
+}
+
+.light {
+  background-color: #f5f7fa;
+  color: #192a40;
+
+  &:hover {
+    background-color: #e8ecf1;
+    box-shadow: 0 4px 12px rgba(245, 247, 250, 0.4);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    background-color: #dfe3e9;
+    transform: translateY(0);
+  }
+}
