@@ -8,7 +8,7 @@ const PricingSection = () => {
 
     return (
         <div className={styles.container}>
-            <PricesHeader />
+            <PricesHeader/>
             <PriceCard />
 
         </div>
