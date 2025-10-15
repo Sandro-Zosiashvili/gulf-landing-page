@@ -21,7 +21,7 @@ const Input = (props: Props) => {
                 props.checkBox &&
                 <div className={styles.checkBox}>
                     <input type={'checkbox'}/>
-                    <span>დამახსოვრება</span>
+                    <span className={styles.save}>დამახსოვრება</span>
                 </div>
             }
             {

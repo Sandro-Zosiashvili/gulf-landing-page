@@ -34,7 +34,7 @@ export default function RootLayout({
                 rel="stylesheet"/>
             <title>Gulf Business</title>
         </head>
-        <body>
+        <body suppressHydrationWarning={true}>
         <Header/>
         <Menu/>
         {children}
