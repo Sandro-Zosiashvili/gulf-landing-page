@@ -1,12 +1,26 @@
 .container {
-  width: 100vw;
+  width: 100%;
   height: 55.801vw;
-  background-image: url("https://b.gulf.ge/gradiantFinal.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100vw 90.801vw;
+  background-image: url('/icons/benefit-card.svg'),
+  url("https://b.gulf.ge/gradiantFinal.png");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 34.922vw auto, 100vw 120vw;
+  padding: 9.53vw 0;
 }
 
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-//#010329
-// #d6fbff
+.wrapper {
+  max-width: 81.688vw;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+}

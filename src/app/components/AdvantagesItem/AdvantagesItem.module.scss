@@ -1,0 +1,28 @@
+.container {
+  max-width: 14.636vw;
+}
+
+.header {
+  width: 3.3333333333333335vw;
+  height: 3.3333333333333335vw;
+  border: 1px solid #000428;
+  border-radius: 50%;
+  font-size: 1.498vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 1.498vw;
+  margin-top: 1.361vw;
+
+}
+
+.description {
+  font-size: 0.973vw;
+  margin-top: 2.383vw;
+}

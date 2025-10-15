@@ -1,21 +1,46 @@
-// AdvantagesSection.jsx
 "use client"
-import { useEffect, useRef } from 'react';
 import styles from './Advantagessection.module.scss';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AdvantagesItem from "@/app/components/AdvantagesItem/AdvantagesItem";
 
-if (typeof window !== 'undefined') {
-    gsap.registerPlugin(ScrollTrigger);
+interface Item {
+    title: string;
+    description: string;
 }
 
 const AdvantagesSection = () => {
-    const containerRef = useRef(null);
-
+    const data: Item[] = [{
+        title: " საწვავის ხარჯვის შემცირება",
+        description: "Gulf card არის კორპორატიული ბარათი, საწვავის ტალონებით შესყიდვის თანამედროვე შემცვლელი."
+    }, {
+        title: " საწვავის ხარჯვის შემცირება",
+        description: "Gulf card არის კორპორატიული ბარათი, საწვავის ტალონებით შესყიდვის თანამედროვე შემცვლელი."
+    }, {
+        title: " საწვავის ხარჯვის შემცირება",
+        description: "Gulf card არის კორპორატიული ბარათი, საწვავის ტალონებით შესყიდვის თანამედროვე შემცვლელი."
+    }, {
+        title: " საწვავის ხარჯვის შემცირება",
+        description: "Gulf card არის კორპორატიული ბარათი, საწვავის ტალონებით შესყიდვის თანამედროვე შემცვლელი."
+    },]
     return (
-        <div ref={containerRef} className={styles.container}>
-        </div>
-    )
-}
+        <div className={styles.container}>
+            <div className={styles.wrapper}>
+                <div className={styles.row}>
+                    {data.slice(0, 2).map((item, index) => (
+                        <AdvantagesItem key={index} number={index + 1} title={item.title} description={item.description}/>
+                    ))}
+                </div>
 
-export default AdvantagesSection
+                <div className={styles.row}>
+                    {data.slice(2, 4).map((item, index) => (
+                        <AdvantagesItem key={index + 2} number={index + 3} title={item.title}
+                                        description={item.description}/>
+                    ))}
+                </div>
+
+            </div>
+
+        </div>
+    );
+};
+
+export default AdvantagesSection;

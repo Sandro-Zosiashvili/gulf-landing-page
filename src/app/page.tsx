@@ -8,10 +8,10 @@ import AdvantagesSection from "@/app/components/AdvantagesSection/AdvantagesSect
 export default function Home() {
     return (
         <div className={styles.page}>
-            <AdvantagesSection />
             <Herosection/>
             <PricingSection/>
             <ServiceSection/>
+            <AdvantagesSection />
 
         </div>
     );
