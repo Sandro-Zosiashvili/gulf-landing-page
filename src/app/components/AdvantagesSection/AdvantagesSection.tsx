@@ -1,6 +1,6 @@
 import styles from './Advantagessection.module.scss';
 import AdvantagesItem from "@/app/components/AdvantagesItem/AdvantagesItem";
-import {ApiFetch} from "@/app/logics/ApiFetch";
+import {ApiFetch} from "@/app/api/ApiFetch";
 
 interface Item {
     id: number;

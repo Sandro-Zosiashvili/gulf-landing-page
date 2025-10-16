@@ -1,6 +1,6 @@
 import styles from './Servicesection.module.scss'
 import ServiceSwiper from "@/app/components/ServiceSwiper/Serviceswiper";
-import {ApiFetch} from "@/app/logics/ApiFetch";
+import {ApiFetch} from "@/app/api/ApiFetch";
 
 const ServiceSection = async () => {
     const services = await ApiFetch("services");

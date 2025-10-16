@@ -1,5 +1,5 @@
 import styles from './Pricecard.module.scss'
-import {ApiFetch} from "@/app/logics/ApiFetch";
+import {ApiFetch} from "@/app/api/ApiFetch";
 
 interface Item {
     id: number;

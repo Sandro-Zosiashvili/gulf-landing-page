@@ -1,7 +1,7 @@
 import styles from './Herosection.module.scss';
 import MySwiper, {MySwiperProps} from "@/app/components/Swiper/Swiper";
 import Login from "@/app/components/Login/Login";
-import {ApiFetch} from "@/app/logics/ApiFetch";
+import {ApiFetch} from "@/app/api/ApiFetch";
 
 
 const HeroSection = async () => {
