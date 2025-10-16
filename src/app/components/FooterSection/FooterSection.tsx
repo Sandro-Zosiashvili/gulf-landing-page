@@ -1,6 +1,4 @@
 import styles from './FooterSection.module.scss'
-import MenuItem from "@/app/components/MenuItem/Menuitem";
-import Button from "@/app/components/Button/Button";
 import FooterSectionItem from "@/app/components/FooterSectionItem/FooterSectionItem";
 import React from "react";
 import UnderFooterSection from "@/app/components/UnderFooterSection/UnderFooterSection";
