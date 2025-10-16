@@ -1,8 +1,8 @@
-import styles from './Newssection.module.scss'
+import styles from './NewsSection.module.scss'
 import NewsSwiper from "@/app/components/NewsSwiper/NewsSwiper";
 import {ApiFetch} from "@/app/api/ApiFetch";
 
-const Newssection = async () => {
+const NewsSection = async () => {
     const news = await ApiFetch("news")
 
     return (
@@ -12,4 +12,4 @@ const Newssection = async () => {
     )
 }
 
-export default Newssection;
+export default NewsSection;

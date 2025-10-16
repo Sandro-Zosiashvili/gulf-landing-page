@@ -1,5 +1,5 @@
 import styles from './Menu.module.scss';
-import Menuitem from "../MenuItem/Menuitem";
+import Menuitem from "../MenuItem/MenuItem";
 import Logo from "@/app/components/Logo/Logo";
 
 const Menu = () => {
