@@ -10,7 +10,6 @@ const PricingSection = () => {
         <div className={styles.container}>
             <PricesHeader/>
             <PriceCard />
-
         </div>
     )
 }

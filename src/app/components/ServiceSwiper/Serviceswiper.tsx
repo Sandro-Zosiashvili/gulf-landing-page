@@ -9,36 +9,17 @@ import {Navigation, Pagination, Autoplay} from "swiper/modules";
 import Image from "next/image";
 import Button from "@/app/components/Button/Button";
 
-interface Item {
+interface Services {
     title: string;
     description: string;
 }
 
-const ServiceSwiper = () => {
-    const totalSlides = 4;
+export interface ServicesData {
+    service: Services[];
+}
+
+const ServiceSwiper = ({ service }: ServicesData) => {
     const [isLastSlide, setIsLastSlide] = useState(false);
-
-
-    const data = [
-        {
-            title: "Gulf club - ქულების დაგროვების სისტემა",
-            description: "Gulf Club ის სახით კომპანია გალფი თავის მომხმარებელს მომენტალური ფასდაკლებისა და ქულების დაგროვების ბარათს სთავაზობს."
-        },
-        {
-            title: "Gulf store - ყველაფერი ერთ სივრცეში",
-            description: "Gulf Store კომპანიის ახალი პროექტია, სადაც მომხმარებელი შეხვდება ყოველდღიური მოხმარების სხვადასხვა საგნებს."
-        }, {
-            title: "Gulf store - ყველაფერი ერთ სივრცეში",
-            description: "Gulf Store კომპანიის ახალი პროექტია, სადაც მომხმარებელი შეხვდება ყოველდღიური მოხმარების სხვადასხვა საგნებს."
-        }, {
-            title: "საერთაშორისო ბარათები",
-            description: "E100 და Aris Baltija-ს ბარათების გამოყენება მთელი საქართველლოს მასშტაბით"
-        }, {
-            title: "ტალონი",
-            description: "მოქნილი სატალონე მომსახურება თქვენი ბიზნესისთვის"
-        },
-
-    ]
 
 
     return (
@@ -79,7 +60,7 @@ const ServiceSwiper = () => {
                 className={styles.mySwiper}
             >
                 {
-                    data.map((item: Item) => (
+                    service.map((item: Services) => (
 
                         <SwiperSlide className={styles.slideContent}>
                             <div className={styles.wrapper}>
@@ -105,16 +86,9 @@ const ServiceSwiper = () => {
                                 </div>
                                 <div>
                                 </div>
-                                <button className={styles.forMore}>
-                                    <div>
-                                        იხილე მეტი
-                                    </div>
-                                    <img src="./icons/Vector.svg"
-                                         style={{
-                                             width: '13px',
-                                             height: '13px',
-                                         }} alt="Vector"/>
-                                </button>
+                                <div className={styles.buttonWrapper}>
+                                    <Button mode="more" title={"იხილე მეტი"} iconSrc={"./icons/Vector.svg"}/>
+                                </div>
                             </div>
                         </SwiperSlide>
                     ))

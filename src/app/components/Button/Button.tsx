@@ -1,36 +1,29 @@
+import React from "react";
+// import styles from "./Button.module.css";
 import styles from './Button.module.scss'
 
-interface Props {
-    className?: string;
-    mode: "light" | "dark";
+type ButtonProps = {
     title: string;
-    icon?: boolean
-    backgroundColor?: string;
-}
+    mode?: "light" | "dark" | "more" | "withIcon";
+    iconSrc?: string;
+    className?: string;
+    onClick?: () => void;
+};
 
-const Button = (props: Props) => {
-    const classes = [styles.container];
-    if (props.mode === "dark") classes.push(styles.dark);
-    if (props.mode === "light") classes.push(styles.light);
-
+const Button: React.FC<ButtonProps> = ({title, mode = "light", iconSrc, className, onClick,}) => {
     return (
-        <button className={`${classes.join(" ").trim()} ${props.className}`}
+        <button
+            className={`${styles.container} ${styles[mode]} ${className || ""}`}
+            onClick={onClick}
         >
-            {props.title}
-            {
-                props.icon &&
+            <span>{title}</span>
+            {iconSrc && (
                 <div className={styles.buttonIcon}>
-                    <img src={'./icons/right-svg-prices.svg'}
-                         style={{
-                             width: "1.361vw",
-                             height: "2.577vw",
-                         }}
-                         alt="icon"/>
+                    <img src={iconSrc} alt="icon" style={{width: "1.021vw", height: "1.021vw"}}/>
                 </div>
-
-            }
+            )}
         </button>
-    )
-}
+    );
+};
 
 export default Button;

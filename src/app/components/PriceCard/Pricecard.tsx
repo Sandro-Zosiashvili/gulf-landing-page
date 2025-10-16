@@ -1,43 +1,20 @@
 import styles from './Pricecard.module.scss'
+import {ApIfetch} from "@/app/logics/APIfetch";
 
 interface Item {
+    id: number;
     title: string;
     price: string;
 }
 
-const PriceCard = () => {
-
-    const data = [
-        {
-            title: "G-Force სუპერი",
-            price: "3.74₾"
-        }, {
-            title: "G-Force პრემიუმი",
-            price: "3.74₾"
-        }, {
-            title: "G-Force რეგულარი",
-            price: "3.74₾"
-        }, {
-            title: "ევრო რეგულარი",
-            price: "3.74₾"
-        }, {
-            title: "G-Force ევრო დიზელი",
-            price: "3.74₾"
-        },
-        {
-            title: "ევრო დიზელი",
-            price: "3.74₾"
-        }, {
-            title: "გაზი",
-            price: "3.74₾"
-        },
-    ]
+const PriceCard = async () => {
+    const prices = await ApIfetch('price');
 
 
     return (
         <div className={styles.container}>
             {
-                data.map((item: Item, index: number) => (
+                prices.map((item: Item, index: number) => (
                     <div className={index == 0 ? styles.priceCardNoneBorder : styles.priceCard} key={index}>
                         <div className={styles.priceTitle}>
                             {item.title}

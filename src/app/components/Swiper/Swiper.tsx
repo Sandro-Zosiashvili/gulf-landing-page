@@ -1,50 +1,26 @@
 "use client";
-import React, {useState} from "react";
-import {Swiper, SwiperSlide} from "swiper/react";
-
-// სტილები
-import styles from "./swiper.module.scss";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-// მოდულები
-import {Navigation, Pagination, Autoplay} from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import Button from "@/app/components/Button/Button";
+import styles from "./swiper.module.scss";
 
-interface Item {
+interface Banner {
+    id: number;
     title: string;
     image: string;
-
 }
 
-const MySwiper = () => {
+export interface MySwiperProps {
+    banners: Banner[];
+}
+
+const MySwiper = ({ banners }: MySwiperProps) => {
     const [currentSlide, setCurrentSlide] = useState(1);
-    const totalSlides = 4;
-    const [isLastSlide, setIsLastSlide] = useState(false);
-
-
-    const data = [
-        {
-            title: "დაიბრუნე ქეშბექი ქულების სახით",
-            image: "https://imagedelivery.net/d_EE26O5eWcJDRYn-qMBOg/2a9b05c3-8939-4712-ef9b-a6c720b9c200/fit=scale-down,width=1920"
-
-        },
-        {
-            title: "ბიზნეს ბარათის და ჯიპიეს სისტემის ინტეგრაცია",
-            image: "https://imagedelivery.net/d_EE26O5eWcJDRYn-qMBOg/d2901ead-9d87-4906-c896-560c61744500/fit=scale-down,width=1920"
-
-        }, {
-            title: "ჩიპის სისტემა",
-            image: "https://imagedelivery.net/d_EE26O5eWcJDRYn-qMBOg/35671376-698a-4b5b-e355-dcd9d5162c00/fit=scale-down,width=1920"
-
-        }, {
-            title: "მობილური სადგურისა და საბარათე სისტემის ინტეგრაცია",
-            image: "https://imagedelivery.net/d_EE26O5eWcJDRYn-qMBOg/6b0c1414-f1f2-443e-bb7f-db8a690d5a00/fit=scale-down,width=1920"
-
-        },
-    ]
 
     return (
         <div className={styles.swiperWrapper}>
@@ -56,49 +32,41 @@ const MySwiper = () => {
                     delay: 7000,
                     disableOnInteraction: false,
                 }}
-                pagination={{
-                    clickable: true,
-                }}
                 navigation={{
                     nextEl: ".custom-next",
                     prevEl: ".custom-prev",
                 }}
                 onSlideChange={(swiper) => {
-                    setCurrentSlide(swiper.realIndex + 1)
-                    setIsLastSlide(swiper.realIndex === swiper.slides.length - 1);
-
+                    setCurrentSlide(swiper.realIndex + 1);
                 }}
                 className={styles.mySwiper}
             >
-                {
-                    data.map((item: Item) => (
-
-                        <SwiperSlide className={styles.slideContent}
-                                     style={{backgroundImage: `url(${item.image})`}}>
-                            <div className={styles.contentWrapper}>
-                                <div className={styles.counter}>
-                                    <span className={styles.currentSlide}>{currentSlide}</span>
-                                    <span>/</span>
-                                    <span>{totalSlides}</span>
-                                </div>
-                                <div className={styles.title}>
-                                    {item.title}
-                                </div>
-                                <div className={styles.button}>
-                                    <Button title={"გაიგე მეტი"} mode={"light"}/>
-                                </div>
+                {banners.map((item: Banner) => (
+                    <SwiperSlide
+                        key={item.id}
+                        className={styles.slideContent}
+                        style={{ backgroundImage: `url(${item.image})` }}
+                    >
+                        <div className={styles.contentWrapper}>
+                            <div className={styles.counter}>
+                                <span className={styles.currentSlide}>{currentSlide}</span>
+                                <span>/</span>
+                                <span>{banners.length}</span>
                             </div>
-                        </SwiperSlide>
-                    ))
-                }
-
+                            <div className={styles.title}>{item.title}</div>
+                            <div className={styles.button}>
+                                <Button title={"გაიგე მეტი"} mode={"light"} />
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                ))}
             </Swiper>
             <div className={styles.rightPagination}>
                 <div className="custom-prev">
-                    <Image src={'./icons/prev.svg'} width={11} height={18} alt={'Previous'}/>
+                    <Image src={'./icons/prev.svg'} width={11} height={18} alt={'Previous'} />
                 </div>
-                <div className="custom-next"  >
-                    <Image src={'./icons/next.svg'} width={11} height={18} alt={'Previous'}/>
+                <div className="custom-next">
+                    <Image src={'./icons/next.svg'} width={11} height={18} alt={'Next'} />
                 </div>
             </div>
         </div>

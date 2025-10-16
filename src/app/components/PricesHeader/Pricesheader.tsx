@@ -11,7 +11,7 @@ const PricesHeader = () => {
                 ფასები
             </h2>
             <div className={styles.button}>
-                <Button title={"არქივი"} mode={"dark"} icon={true}/>
+                <Button title={"არქივი"} mode={"withIcon"} iconSrc={'./icons/right-svg-prices.svg'}/>
             </div>
         </div>
 
