@@ -3,14 +3,14 @@ import MenuItem from "@/app/components/MenuItem/Menuitem";
 import Button from "@/app/components/Button/Button";
 import FooterSectionItem from "@/app/components/FooterSectionItem/FooterSectionItem";
 import React from "react";
+import UnderFooterSection from "@/app/components/UnderFooterSection/UnderFooterSection";
 
 
 const FooterSection = () => {
 
-
     return (
 
-        <div className={styles.container}>
+        <footer className={styles.container}>
             <div className={styles.footerContainer}>
                 <FooterSectionItem
                     title="მენიუ"
@@ -29,10 +29,8 @@ const FooterSection = () => {
                     items={["*0007", "gulf@info.ge"]}
                 />
             </div>
-            <div className={styles.underFooter}>
-
-            </div>
-        </div>
+            <UnderFooterSection/>
+        </footer>
 
     )
 }

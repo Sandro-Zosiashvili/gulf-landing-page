@@ -1,5 +1,4 @@
 import React from "react";
-// import styles from "./Button.module.css";
 import styles from './Button.module.scss'
 
 type ButtonProps = {
@@ -16,10 +15,10 @@ const Button: React.FC<ButtonProps> = ({title, mode = "light", iconSrc, classNam
             className={`${styles.container} ${styles[mode]} ${className || ""}`}
             onClick={onClick}
         >
-            <span>{title}</span>
+            {title && <span>{title}</span>}
             {iconSrc && (
                 <div className={styles.buttonIcon}>
-                    <img src={iconSrc} alt="icon" style={{width: "1.021vw", height: "1.021vw"}}/>
+                    <img src={iconSrc} alt={title ? `${title} icon` : "button icon"} style={{width: "1.021vw", height: "1.021vw"}}/>
                 </div>
             )}
         </button>

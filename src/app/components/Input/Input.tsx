@@ -17,15 +17,15 @@ const Input = (props: Props) => {
 
     return (
         <div>
-            {
-                props.checkBox &&
+            {props.checkBox && (
                 <div className={styles.checkBox}>
-                    <input type={'checkbox'}/>
-                    <span className={styles.save}>დამახსოვრება</span>
+                    <label>
+                        <input type="checkbox"/>
+                        <span className={styles.save}>დამახსოვრება</span>
+                    </label>
                 </div>
-            }
-            {
-                props.general &&
+            )}
+            {props.general && (
                 <input
                     className={styles.input}
                     type={props.type}
@@ -33,9 +33,8 @@ const Input = (props: Props) => {
                     value={props.value}
                     onChange={(e) => props.onChange(e.target.value)}
                 />
-
-            }
-            {props.password &&
+            )}
+            {props.password && (
                 <div className={styles.wrapper}>
                     <input
                         className={styles.input}
@@ -44,23 +43,24 @@ const Input = (props: Props) => {
                         value={props.value}
                         onChange={(e) => props.onChange(e.target.value)}
                     />
-
-                    <div className={styles.visibility} onClick={() => setVisibility(!visibility)}>
-                        <img src={visibility ?
-                            './icons/visibility.svg' :
-                            './icons/disability.svg'}
-                             alt={'password-visibility'} style={{
-                            width: '1.634vw',
-                            height: '1.634vw',
-                        }}/>
+                    <div
+                        className={styles.visibility}
+                        onClick={() => setVisibility(!visibility)}
+                    >
+                        <img
+                            src={visibility
+                                ? './icons/visibility.svg'
+                                : './icons/disability.svg'}
+                            alt="password-visibility"
+                            style={{
+                                width: '1.634vw',
+                                height: '1.634vw',
+                            }}
+                        />
                     </div>
                 </div>
-
-
-            }
+            )}
         </div>
-
-
     )
 }
 

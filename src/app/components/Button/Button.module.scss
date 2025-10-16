@@ -49,7 +49,7 @@
 .buttonIcon {
   width: 2vw;
   height: 2vw;
-  background-color: #f8f9fc;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,4 +74,9 @@
 
 .onlyIcon {
  background-color: unset;
+
+}
+.onlyIcon img {
+  width: 1.500vw !important;
+  height: 1.500vw !important;
 }

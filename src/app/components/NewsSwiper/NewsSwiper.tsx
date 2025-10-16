@@ -17,20 +17,17 @@ interface News {
     date: string;
 }
 
-export interface NewsSwiper {
+export interface NewsSwiperProps {
     news: News[];
 }
 
-const NewsSwiper = ({news}: NewsSwiper) => {
+const NewsSwiper = ({news}: NewsSwiperProps) => {
     const [isLastSlide, setIsLastSlide] = useState(false);
 
-
     return (
-        <div className={styles.swiperWrapper}>
+        <section className={styles.swiperWrapper}>
             <div className={styles.container}>
-                <div className={styles.title}>
-                    სიახლეები
-                </div>
+                <h2 className={styles.title}>სიახლეები</h2>
                 <div className={styles.rightPagination}>
                     <Button mode={"withIcon"} iconSrc={'./icons/icons8-menu-50.png'} title={"სია"}/>
                     <div className={styles.forFlex}>
@@ -38,10 +35,9 @@ const NewsSwiper = ({news}: NewsSwiper) => {
                             <Image src={'./icons/prev.svg'} width={13} height={20} alt={'Previous'}/>
                         </div>
                         <div className="custom-next-two">
-                            <Image src={'./icons/next.svg'} width={13} height={20} alt={'Previous'}/>
+                            <Image src={'./icons/next.svg'} width={13} height={20} alt={'Next'}/>
                         </div>
                     </div>
-
                 </div>
             </div>
             <Swiper
@@ -62,38 +58,33 @@ const NewsSwiper = ({news}: NewsSwiper) => {
                 }}
                 onSlideChange={(swiper) => {
                     setIsLastSlide(swiper.realIndex === swiper.slides.length - 1);
-
                 }}
                 className={styles.mySwiper}
             >
-                {
-                    news.map((item: News) => (
-
-                        <SwiperSlide className={styles.slideContent}>
-                            <div className={styles.wrapper}>
-                                <div className={styles.cover}>
-                                    <img src={`${item.image}`} style={{
-                                        width: "13.61111111111111vw",
-                                        height: "17.01388888888889vw",
-                                        objectFit: "cover",
-                                        borderRadius: "1.08333333333333vw",
-                                    }} alt="image"/>
-                                </div>
-                                <div className={styles.content}>
-                                    <p className={styles.date}>{item.date}</p>
-                                    <p className={styles.titleSecond}>{item.title}</p>
-                                    <p className={styles.description}>{item.description}</p>
-                                    <div className={styles.button}>
-                                        <Button mode="more" title={"იხილე მეტი"} iconSrc={"./icons/Vector.svg"}/>
-                                    </div>
+                {news.map((item: News) => (
+                    <SwiperSlide className={styles.slideContent} key={item.id}>
+                        <article className={styles.wrapper}>
+                            <div className={styles.cover}>
+                                <img src={item.image} style={{
+                                    width: "13.61111111111111vw",
+                                    height: "17.01388888888889vw",
+                                    objectFit: "cover",
+                                    borderRadius: "1.08333333333333vw",
+                                }} alt={item.title}/>
+                            </div>
+                            <div className={styles.content}>
+                                <p className={styles.date}>{item.date}</p>
+                                <p className={styles.titleSecond}>{item.title}</p>
+                                <p className={styles.description}>{item.description}</p>
+                                <div className={styles.button}>
+                                    <Button mode="more" title={"იხილე მეტი"} iconSrc={"./icons/Vector.svg"}/>
                                 </div>
                             </div>
-                        </SwiperSlide>
-                    ))
-                }
-
+                        </article>
+                    </SwiperSlide>
+                ))}
             </Swiper>
-        </div>
+        </section>
     );
 };
 

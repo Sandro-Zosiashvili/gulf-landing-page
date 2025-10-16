@@ -1,6 +1,5 @@
 import styles from './AdvantagesItem.module.scss'
 
-
 interface Props {
     number: number;
     title: string;

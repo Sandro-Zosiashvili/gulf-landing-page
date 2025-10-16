@@ -2,16 +2,13 @@ import styles from './Menu.module.scss';
 import Menuitem from "../MenuItem/Menuitem";
 import Logo from "@/app/components/Logo/Logo";
 
-
 const Menu = () => {
-
     return (
-        <div className={styles.container}>
-            <Logo/>
+        <nav className={styles.container}>
+            <Logo title={true} />
             <Menuitem/>
-        </div>
+        </nav>
     )
 }
-
 
 export default Menu;

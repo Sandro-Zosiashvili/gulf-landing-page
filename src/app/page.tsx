@@ -10,13 +10,13 @@ import FooterSection from "@/app/components/FooterSection/FooterSection";
 export default async function Home() {
     return (
         <div className={styles.page}>
-            <FooterSection/>
             <HeroSection/>
             <PricingSection/>
             <ServiceSection/>
             <AdvantagesSection/>
             <NewsSection/>
             <BusinessCardSection/>
+            <FooterSection/>
         </div>
     );
 }

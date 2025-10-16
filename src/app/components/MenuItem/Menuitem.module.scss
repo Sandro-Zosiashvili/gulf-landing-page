@@ -8,6 +8,8 @@
 .menuItem {
   position: relative;
   cursor: pointer;
+  list-style: none;
+
 }
 
 .menuItem::after {

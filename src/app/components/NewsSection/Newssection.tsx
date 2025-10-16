@@ -2,17 +2,14 @@ import styles from './Newssection.module.scss'
 import NewsSwiper from "@/app/components/NewsSwiper/NewsSwiper";
 import {ApiFetch} from "@/app/logics/ApiFetch";
 
-
 const Newssection = async () => {
     const news = await ApiFetch("news")
 
-
     return (
-        <div className={styles.container}>
+        <section className={styles.container}>
             <NewsSwiper news={news}/>
-        </div>
+        </section>
     )
 }
 
-
-export default Newssection
+export default Newssection;

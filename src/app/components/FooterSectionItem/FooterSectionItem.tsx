@@ -10,7 +10,7 @@ interface Props {
 
 const FooterSectionItem: React.FC<Props> = ({title, items, icon}) => {
     return (
-        <div className={styles.footerSectionItem}>
+        <section className={styles.footerSectionItem}>
             <h3 className={styles.title}>{title}</h3>
 
             {icon ? (
@@ -31,7 +31,7 @@ const FooterSectionItem: React.FC<Props> = ({title, items, icon}) => {
                     ))}
                 </ul>
             )}
-        </div>
+        </section>
     );
 };
 

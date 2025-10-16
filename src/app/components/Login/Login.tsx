@@ -5,16 +5,13 @@ import {useState} from 'react';
 import Image from 'next/image'
 import Button from "@/app/components/Button/Button";
 
-
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     return (
-        <div className={styles.container}>
-            <div className={styles.loginTitle}>
-                ავტორიზაცია
-            </div>
+        <form className={styles.container}>
+            <h2 className={styles.loginTitle}>ავტორიზაცია</h2>
             <div className={styles.inputGap}>
                 <Input
                     type="text"
@@ -40,9 +37,8 @@ const Login = () => {
             <div className={styles.button}>
                 <Button mode={"dark"} title={"შესვლა"}/>
                 <Button mode={"light"} title={"ბარათის შეკვეთა"}/>
-
             </div>
-        </div>
+        </form>
     )
 }
 
