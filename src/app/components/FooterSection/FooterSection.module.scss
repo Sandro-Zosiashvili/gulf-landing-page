@@ -1,0 +1,35 @@
+.container {
+  max-width: 81.688vw;
+  width: 100%;
+  height: 50vh;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.footerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footerContent {
+  width: 16.678vw;
+  height: 100%;
+  background-color: purple;
+}
+.menuItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerSocialMedia {
+  display: flex;
+.fitContent {
+  width: fit-content;
+}}
+
+.underFooter {
+  width: 100%;
+  background-color: red;
+}
+

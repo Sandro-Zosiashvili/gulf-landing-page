@@ -49,7 +49,7 @@
 .buttonIcon {
   width: 2vw;
   height: 2vw;
-  background: white;
+  background-color: #f8f9fc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,4 +69,9 @@
   color: white;
   padding: 0.694vw 0.694vw 0.6944444444444444vw 2.222vw;
   background-color: #192a3f;
+
+}
+
+.onlyIcon {
+ background-color: unset;
 }

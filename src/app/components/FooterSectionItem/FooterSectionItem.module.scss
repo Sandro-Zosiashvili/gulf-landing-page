@@ -1,0 +1,26 @@
+.footerSectionItem {
+  width: 100%;
+  height: 200px;
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+}
+
+.listItem {
+  list-style: none;
+}
+.fitGap {
+  display: flex;
+  gap: 0.681vw;
+}
+.title {
+  margin-bottom: 1.021vw;
+  font-size: 1.112vw;
+  font-weight: 600;
+}
+.listItem {
+  font-size: 0.973vw;
+}
+.list {
+  line-height: 25px;
+}

@@ -1,5 +1,5 @@
 import styles from './Pricecard.module.scss'
-import {ApIfetch} from "@/app/logics/APIfetch";
+import {ApiFetch} from "@/app/logics/ApiFetch";
 
 interface Item {
     id: number;
@@ -8,7 +8,7 @@ interface Item {
 }
 
 const PriceCard = async () => {
-    const prices = await ApIfetch('price');
+    const prices = await ApiFetch('price');
 
 
     return (

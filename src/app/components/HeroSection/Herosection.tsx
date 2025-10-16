@@ -5,12 +5,12 @@
 import styles from './Herosection.module.scss';
 import MySwiper, {MySwiperProps} from "@/app/components/Swiper/Swiper";
 import Login from "@/app/components/Login/Login";
-import {ApIfetch} from "@/app/logics/APIfetch";
+import {ApiFetch} from "@/app/logics/ApiFetch";
 
 
 
 const HeroSection = async () => {
-    const banners = await ApIfetch('banners');
+    const banners = await ApiFetch('banners');
 
     return (
         <div className={styles.firstLayout}>

@@ -1,10 +1,10 @@
 import styles from './Newssection.module.scss'
 import NewsSwiper from "@/app/components/NewsSwiper/NewsSwiper";
-import {ApIfetch} from "@/app/logics/APIfetch";
+import {ApiFetch} from "@/app/logics/ApiFetch";
 
 
 const Newssection = async () => {
-    const news = await ApIfetch("news")
+    const news = await ApiFetch("news")
 
 
     return (

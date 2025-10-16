@@ -3,8 +3,8 @@ import React from "react";
 import styles from './Button.module.scss'
 
 type ButtonProps = {
-    title: string;
-    mode?: "light" | "dark" | "more" | "withIcon";
+    title?: string;
+    mode?: "light" | "dark" | "more" | "withIcon" | "onlyIcon";
     iconSrc?: string;
     className?: string;
     onClick?: () => void;
