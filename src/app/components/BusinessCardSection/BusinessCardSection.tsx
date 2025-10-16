@@ -4,7 +4,6 @@ import Button from "@/app/components/Button/Button";
 
 const BusinessCardSection = () => {
 
-
     return (
         <div className={styles.container}>
             <div className={styles.content}>
@@ -18,11 +17,8 @@ const BusinessCardSection = () => {
                 </p>
                 <div className={styles.button}>
                     <Button title={"ბარათის შეკვეთა"} mode={"dark"}/>
-
                 </div>
-
             </div>
-
         </div>
     )
 }

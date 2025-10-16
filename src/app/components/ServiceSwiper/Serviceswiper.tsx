@@ -18,16 +18,13 @@ export interface ServicesData {
     service: Services[];
 }
 
-const ServiceSwiper = ({ service }: ServicesData) => {
-    const [isLastSlide, setIsLastSlide] = useState(false);
-
-
+const ServiceSwiper = ({service}: ServicesData) => {
+    // const [isLastSlide, setIsLastSlide] = useState(false);
+// სვაიპერები ცოტა დიდები გამომივიდა მეტნაირად ვერ დავშალე კოდი
     return (
         <div className={styles.swiperWrapper}>
             <div className={styles.container}>
-                <div className={styles.title}>
-                    სერვისები
-                </div>
+                <div className={styles.title}>სერვისები</div>
                 <div className={styles.rightPagination}>
                     <div className="custom-prev-two">
                         <Image src={'./icons/prev.svg'} width={13} height={20} alt={'Previous'}/>
@@ -37,31 +34,23 @@ const ServiceSwiper = ({ service }: ServicesData) => {
                     </div>
                 </div>
             </div>
-            <Swiper
-                modules={[Navigation, Autoplay]}
-                spaceBetween={24}
-                slidesPerView={3}
-                autoplay={{
-                    delay: 7000,
-                    disableOnInteraction: false,
-                }}
-                loop={true}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={{
-                    nextEl: ".custom-next-two",
-                    prevEl: ".custom-prev-two",
-                }}
-                onSlideChange={(swiper) => {
-                    setIsLastSlide(swiper.realIndex === swiper.slides.length - 1);
-
-                }}
-                className={styles.mySwiper}
+            <Swiper modules={[Navigation, Autoplay]}
+                    spaceBetween={24}
+                    slidesPerView={3}
+                    autoplay={{delay: 7000, disableOnInteraction: false,}}
+                    loop={true}
+                    pagination={{clickable: true,}}
+                    navigation={{
+                        nextEl: ".custom-next-two",
+                        prevEl: ".custom-prev-two",
+                    }}
+                    // onSlideChange={(swiper) => {
+                    //     setIsLastSlide(swiper.realIndex === swiper.slides.length - 1);
+                    // }}
+                    className={styles.mySwiper}
             >
                 {
                     service.map((item: Services) => (
-
                         <SwiperSlide className={styles.slideContent}>
                             <div className={styles.wrapper}>
                                 <div className={styles.contentContainer}>
@@ -74,17 +63,8 @@ const ServiceSwiper = ({ service }: ServicesData) => {
                                     </div>
                                 </div>
                                 <div className={styles.contentDescription}>
-                                    <p className={styles.contentTitle}>
-                                        {item.title}
-                                    </p>
-                                    <p className={styles.contentDescription}>
-                                        {item.description}
-                                    </p>
-                                </div>
-                                <div>
-
-                                </div>
-                                <div>
+                                    <p className={styles.contentTitle}> {item.title}</p>
+                                    <p className={styles.contentDescription}> {item.description}</p>
                                 </div>
                                 <div className={styles.buttonWrapper}>
                                     <Button mode="more" title={"იხილე მეტი"} iconSrc={"./icons/Vector.svg"}/>
@@ -93,7 +73,6 @@ const ServiceSwiper = ({ service }: ServicesData) => {
                         </SwiperSlide>
                     ))
                 }
-
             </Swiper>
         </div>
     );
