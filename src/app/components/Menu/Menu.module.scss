@@ -7,3 +7,10 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 960px) {
+
+  .container {
+    max-width: 95vw;
+  }
+}

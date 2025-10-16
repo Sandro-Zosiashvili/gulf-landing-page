@@ -35,3 +35,9 @@
   flex-direction: column;
   gap: 1.361vw;
 }
+
+@media (max-width: 960px) {
+  .container {
+    display: none;
+  }
+}

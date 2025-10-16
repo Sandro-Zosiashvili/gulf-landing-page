@@ -3,7 +3,7 @@
   background: #FFFFFF;
   width: 100%;
   height: 3.75vw;
-  border-radius: 50px;
+  border-radius: 3.404vw;
   font-weight: bolder;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -12,6 +12,8 @@
   align-items: center;
   justify-content: center;
   gap: 1.089vw;
+  white-space: nowrap;
+
 }
 
 .dark {
@@ -79,4 +81,15 @@
 .onlyIcon img {
   width: 1.500vw !important;
   height: 1.500vw !important;
+}
+
+@media (max-width: 960px) {
+
+  .container {
+    width: unset;
+    height: 11.282vw;
+    padding: 3.076vw 4.615vw;
+    font-size: 3.589vw;
+    border-radius: 13.846vw !important;
+  }
 }

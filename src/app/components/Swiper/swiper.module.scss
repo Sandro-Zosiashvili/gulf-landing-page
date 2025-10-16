@@ -1,9 +1,8 @@
 .swiperWrapper {
   position: relative;
   width: 100%;
-  height: 32.15277777777778vw;
+  height: 32.152vw;
 }
-
 .counter {
   z-index: 10;
   background-color: #FFFFFF33;
@@ -47,7 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2.723vw;
+  //gap: 2.723vw;
 }
 
 .slideContent {
@@ -100,6 +99,47 @@
     border-radius: 50%;
     cursor: pointer;
   }
+}
+
+@media (max-width: 960px) {
+
+  .swiperWrapper {
+    height: 63.589743589743584vw;
+  }
+
+  .counter {
+    font-size: 3.589vw;
+    width: 14.102vw;
+    height: 3.102vw;
+    padding: 4vw;
+  }
+  .slideContent {
+    padding-top: 6.153vw;
+    padding-left: 6.153vw;
+    padding-bottom: 10vw;
+    border-radius: 35px;
+
+  }
+
+
+  .rightPagination {
+    right: 3.723vw;
+    bottom: 5.723vw;
+    :global(.custom-prev),
+    :global(.custom-next) {
+      width: 11.282051282051283vw;
+      height: 11.282051282051283vw;
+
+    }
+  }
+  .icon {
+    width: 4.744vw;
+    height: 4.102vw;
+  }
+  .title {
+    font-size: 4vw;
+  }
+
 }
 
 

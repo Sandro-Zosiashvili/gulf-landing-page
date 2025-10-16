@@ -63,10 +63,10 @@ const MySwiper = ({ banners }: MySwiperProps) => {
             </Swiper>
             <div className={styles.rightPagination}>
                 <div className="custom-prev">
-                    <Image src={'./icons/prev.svg'} width={11} height={18} alt={'Previous'} />
+                    <img className={styles.icon} src={'./icons/prev.svg'} width={11} height={18} alt={'Previous'} />
                 </div>
                 <div className="custom-next">
-                    <Image src={'./icons/next.svg'} width={11} height={18} alt={'Next'} />
+                    <img className={styles.icon} src={'./icons/next.svg'} width={11} height={18} alt={'Next'} />
                 </div>
             </div>
         </div>

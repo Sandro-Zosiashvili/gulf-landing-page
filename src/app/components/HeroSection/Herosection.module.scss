@@ -9,3 +9,12 @@
   width: 100%;
   margin: 43px auto 0;
 }
+
+@media (max-width: 960px) {
+  .firstLayout {
+    max-width: 95vw;
+  }
+  .swiper {
+    width: 100%;
+  }
+}
