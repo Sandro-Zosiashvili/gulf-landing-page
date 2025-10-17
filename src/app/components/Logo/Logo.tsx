@@ -13,14 +13,16 @@ const Logo = (props: Props) => {
             <div>
                 {props.large ? (
                     <img
+                        className={styles.mainLogo}
                         src={"./icons/gulf-logo.svg"}
-                        style={{ width: '3.472vw', height: '3.199vw' }}
+                        style={{width: '3.472vw', height: '3.199vw'}}
                         alt="Main Logo"
                     />
                 ) : (
                     <img
+                        className={styles.mainLogo}
                         src={"./icons/gulf-logo.svg"}
-                        style={{ width: '2.519vw', height: '4.381vh' }}
+                        style={{width: '2.519vw', height: '4.381vh'}}
                         alt="Main Logo"
                     />
                 )}
@@ -28,13 +30,12 @@ const Logo = (props: Props) => {
             {props.title && (
                 <>
                     <div className={styles.middleLine}></div>
-                    <div>
-                        <img
-                            src={"./icons/gulf-title.svg"}
-                            style={{ width: '8.169vw', height: '3.995vh' }}
-                            alt="Main Logo"
-                        />
-                    </div>
+                    <img
+                        className={styles.titleImg}
+                        src={"./icons/gulf-title.svg"}
+                        style={{width: '8.169vw', height: '3.995vh'}}
+                        alt="Main Logo"
+                    />
                 </>
             )}
         </figure>

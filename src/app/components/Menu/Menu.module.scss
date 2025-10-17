@@ -8,9 +8,38 @@
   justify-content: space-between;
 }
 
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
 @media (max-width: 960px) {
+  .mobileMenu {
+    display: flex;
+    gap: 3.361vw;
+  }
 
   .container {
     max-width: 95vw;
+    height: auto;
+    margin-top: 2vw;
   }
+
+  .responsiveMenu {
+    display: none;
+  }
+
+  .mobileMenuIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.256vw;
+    height: 10.256vw;
+    background-color: #f7f9fc;
+    border-radius: 50px;
+  }
+
 }

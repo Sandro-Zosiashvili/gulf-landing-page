@@ -1,12 +1,15 @@
 
 .container {
-  max-width: 81.688vw;
+  //max-width: 81.688vw;
+  padding-left: 9.19vw;
+  padding-right: 9.19vw;
   width: 100%;
-  height: 6.83vh;
+  height: 3.6111111111111107vw;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .containerLeftContent {
@@ -21,4 +24,26 @@
   align-items: center;
   font-size: 0.817vw;
   gap: 1.361vw;
+}
+.responsiveHeader {
+  display: flex;
+  align-items: center;
+  font-size: 0.817vw;
+  gap: 1.361vw;
+}
+
+@media (max-width: 960px) {
+    .container {
+      max-width: 95vw;
+      padding: unset;
+      height: 9vw;
+    }
+
+  .containerLeftContent {
+    font-size: 3.076vw;
+    font-weight: 450;
+  }
+  .responsiveHeader {
+    display: none;
+  }
 }

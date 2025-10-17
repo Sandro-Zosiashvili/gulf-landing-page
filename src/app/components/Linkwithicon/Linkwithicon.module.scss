@@ -8,3 +8,16 @@
 .icon {
   width: fit-content;
 }
+
+
+
+@media (max-width: 960px) {
+  .container {
+    gap: 2vw;
+    font-size: 3.076vw;
+  }
+  .container img {
+    width: 2vw !important;
+    height: 2vw !important;
+  }
+}
