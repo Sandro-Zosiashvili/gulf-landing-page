@@ -4,5 +4,11 @@
   margin: 9.53vw auto 0 auto;
 }
 
+@media (max-width: 960px) {
+  .container {
+    max-width: 95vw;
+  }
+}
+
 
 

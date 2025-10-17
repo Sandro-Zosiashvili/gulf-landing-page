@@ -13,3 +13,12 @@
 .button {
   width: 12.798vw;
 }
+
+@media (max-width: 960px) {
+  .title {
+    font-size: 6.153vw;
+  }
+  .button {
+    width: auto;
+  }
+}

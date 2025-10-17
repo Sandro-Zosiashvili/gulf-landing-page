@@ -29,7 +29,7 @@ const NewsSwiper = ({news}: NewsSwiperProps) => {
             <div className={styles.container}>
                 <h2 className={styles.title}>სიახლეები</h2>
                 <div className={styles.rightPagination}>
-                    <Button mode={"withIcon"} iconSrc={'./icons/icons8-menu-50.png'} title={"სია"}/>
+                    <Button mode={"withIcon"} iconSrc={'./icons/menuIcon.svg'} title={"სია"}/>
                     <div className={styles.forFlex}>
                         <div className="custom-prev-two">
                             <Image src={'./icons/prev.svg'} width={13} height={20} alt={'Previous'}/>

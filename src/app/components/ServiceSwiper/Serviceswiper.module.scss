@@ -24,8 +24,6 @@
 
 .slideContent {
   padding: 2.7777777777777777vw 2.5vw;
-  //width: 26.344vw;
-  //height: 26.753vw;
   border-radius: 2.083333333333333vw;
   background-color: #ffffff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
@@ -46,7 +44,6 @@
 .rightPagination {
   display: flex;
   gap: 10px;
-
   z-index: 10;
 
   :global(.custom-prev-two),
@@ -60,14 +57,29 @@
     border-radius: 50%;
     cursor: pointer;
 
+
     &:hover {
       background-color: #2a3a50;
     }
+
 
     &:active {
       background-color: #1a2b41;
     }
   }
+  :global(.lastSlide) {
+    background-color: #f5f5f5;
+    &:hover {
+      background-color: #f5f5f5;
+    }
+    .slideContent {
+      box-shadow: unset;
+    }
+    img {
+      filter: brightness(0) invert(0.7); // 0.7 = 70% სიკაშკაშე
+    }
+  }
+
 }
 
 .contentContainer {
@@ -86,7 +98,6 @@
 }
 
 .wrapper {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,9 +122,55 @@
 }
 
 
-
 .buttonWrapper {
   width: fit-content;
+}
+
+
+@media (max-width: 960px) {
+  .title {
+    font-size: 6.153vw;
+  }
+
+  .rightPagination {
+    :global(.custom-prev-two),
+    :global(.custom-next-two) {
+      width: 10vw;
+      height: 10vw;
+    }
+    img {
+      width: 4vw !important  ;
+      height: 4vw !important;
+    }
+    :global(.lastSlide) {
+      background-color: #ecebeb !important;
+    }
+  }
+  .contentTitle {
+    font-size: 4.615384615384616vw;
+  }
+  .swiperWrapper {
+    height: 55.48717948717949vw;
+  }
+  .contentDescription {
+    font-size: 3.076923076923077vw;
+  }
+
+  .contentIcon {
+    width: 10vw;
+    height: 10vw;
+  }
+  .contentIcon  img {
+    width: 4.500vw !important ;
+    height: 4.500vw !important;
+  }
+  .contentTitle {
+    margin-top: 2vw;
+  }
+  .mySwiper {
+    margin-top: 5vw;
+  }
+
 }
 
 

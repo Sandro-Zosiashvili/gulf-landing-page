@@ -6,6 +6,11 @@
   display: flex;
   flex-direction: column;
   gap: 2.246vw;
-
+}
+@media (max-width: 960px) {
+  .container {
+    max-width: 95vw;
+    gap: 7.246vw;
+  }
 
 }

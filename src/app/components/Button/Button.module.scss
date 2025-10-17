@@ -69,28 +69,48 @@
 .withIcon {
   width: fit-content;
   color: white;
-  padding: 0.694vw 0.694vw 0.6944444444444444vw 2.222vw;
+  padding: 0.694vw 0.694vw 0.694vw 2.222vw;
   background-color: #192a3f;
-
 }
 
 .onlyIcon {
- background-color: unset;
+  background-color: unset;
 
 }
+
 .onlyIcon img {
   width: 1.500vw !important;
   height: 1.500vw !important;
 }
 
 @media (max-width: 960px) {
-
   .container {
     width: unset;
     height: 11.282vw;
     padding: 3.076vw 4.615vw;
     font-size: 3.589vw;
     border-radius: 13.846vw !important;
+  }
+  .withIcon {
+    padding-right: 2vw;
+    gap: 3.089vw;
+  }
+  .buttonIcon {
+    width: 7vw;
+    height: 7vw;
+  }
+  .buttonIcon img {
+    width: 4.500vw !important;
+    height: 4.500vw !important;
+  }
+  .more {
+    font-size: 2.5897435897435894vw ;
+    padding-left: 2vw;
+    padding-bottom: 0;
+  }
+  .more img {
+    width: 2.500vw !important;
+    height: 2.500vw !important;
   }
 
 }

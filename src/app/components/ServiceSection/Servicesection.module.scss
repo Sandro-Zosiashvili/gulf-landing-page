@@ -3,11 +3,20 @@
   margin-top: 8.713vw;
   background-color: #f7f9fb;
   height: 50.102vw;
-
 }
 .wrapper {
   max-width: 81.688vw;
   width: 100%;
   height: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    max-width: 95vw;
+  }
+  .container {
+    height: 83.48717948717949vw;
+
+  }
 }

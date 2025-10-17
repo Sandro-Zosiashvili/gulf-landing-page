@@ -33,11 +33,25 @@
 }
 .price {
   font-size: 18px;
-  font-weight:  bold;
+  font-weight: bold;
 }
 
 .priceTitle {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (max-width: 960px) {
+  .container {
+    font-size: 3.5897435897435894vw;
+    border-radius: 10px;
+
+  }
+  .price {
+    font-size: 5.5897435897435894vw;
+  }
+  .priceCard {
+    padding-left: 20px;
+  }
+
 }

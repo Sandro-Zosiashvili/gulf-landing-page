@@ -19,34 +19,42 @@ export interface ServicesData {
 }
 
 const ServiceSwiper = ({service}: ServicesData) => {
-    // const [isLastSlide, setIsLastSlide] = useState(false);
-// სვაიპერები ცოტა დიდები გამომივიდა მეტნაირად ვერ დავშალე კოდი
+    const [isLastSlide, setIsLastSlide] = useState(false);
+    const [isFirstSlide, setIsFirstSlide] = useState(true);
+    console.log(isLastSlide);
+
     return (
         <div className={styles.swiperWrapper}>
             <div className={styles.container}>
                 <div className={styles.title}>სერვისები</div>
                 <div className={styles.rightPagination}>
-                    <div className="custom-prev-two">
-                        <Image src={'./icons/prev.svg'} width={13} height={20} alt={'Previous'}/>
+                    <div className={`custom-prev-two ${isFirstSlide  ? "lastSlide" : ""}`}>
+                        <Image src={'./icons/prev.svg'}
+                               width={13} height={20}
+                               alt={'Previous'}/>
                     </div>
-                    <div className="custom-next-two">
+                    <div className={`custom-next-two ${isLastSlide ? "lastSlide" : ""}`}>
                         <Image src={'./icons/next.svg'} width={13} height={20} alt={'Previous'}/>
                     </div>
                 </div>
             </div>
-            <Swiper modules={[Navigation, Autoplay]}
+            <Swiper modules={[Navigation]}
                     spaceBetween={24}
                     slidesPerView={3}
+                    breakpoints={{
+                        960: {slidesPerView: 3, slidesOffsetAfter: 0,},
+                        0: {slidesPerView: 1, slidesOffsetAfter: 50,},
+                    }}
                     autoplay={{delay: 7000, disableOnInteraction: false,}}
-                    loop={true}
                     pagination={{clickable: true,}}
                     navigation={{
                         nextEl: ".custom-next-two",
                         prevEl: ".custom-prev-two",
                     }}
-                    // onSlideChange={(swiper) => {
-                    //     setIsLastSlide(swiper.realIndex === swiper.slides.length - 1);
-                    // }}
+                    onSlideChange={(swiper) => {
+                        setIsLastSlide(swiper.isEnd);
+                        setIsFirstSlide(swiper.isBeginning);
+                    }}
                     className={styles.mySwiper}
             >
                 {
