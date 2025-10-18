@@ -13,7 +13,7 @@ const Logo = (props: Props) => {
             <div>
                 {props.large ? (
                     <img
-                        className={styles.mainLogo}
+                        className={styles.mainLogoLarge}
                         src={"./icons/gulf-logo.svg"}
                         style={{width: '3.472vw', height: '3.199vw'}}
                         alt="Main Logo"

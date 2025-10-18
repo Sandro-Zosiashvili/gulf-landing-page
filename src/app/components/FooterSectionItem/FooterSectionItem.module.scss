@@ -20,6 +20,62 @@
   font-size: 1vw;
   margin-bottom: 1.0416666666666665vw;
   cursor: pointer;
+}
+.responsiveTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titleDows {
+  display: none;
+}
+.listResponsive {
+  display: none;
+}
 
+.fitContent {
+  cursor: pointer;
+}
+@media (max-width: 960px) {
+  .responsiveTitle {
+    cursor: pointer;
+  }
+  .title {
+    font-size: 4.5vw;
+    font-weight: 600;
+  }
+  .listItem {
+    font-size: 4vw;
+  }
+  .titleDows {
+    display: flex;
+  }
+  .listItem {
+    margin-top: 4vw;
+    color: #767676;
+    margin-left: 3vw;
+  }
+  .list {
+    animation: slideDown 0.4s ease-in-out forwards;
+  }
+  .listResponsive {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .list {
+    display: none;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 

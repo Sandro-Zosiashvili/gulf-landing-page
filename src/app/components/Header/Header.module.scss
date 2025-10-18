@@ -1,15 +1,15 @@
-
 .container {
-  //max-width: 81.688vw;
+  width: 100%;
+  z-index: 999;
+  background: white;
   padding-left: 9.19vw;
   padding-right: 9.19vw;
-  width: 100%;
-  height: 3.6111111111111107vw;
-  margin: 0 auto;
+  height: 3.6vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #d9d9d9;
+  margin: 0 auto;
 }
 
 .containerLeftContent {
@@ -24,20 +24,48 @@
   align-items: center;
   font-size: 0.817vw;
   gap: 1.361vw;
+  position: relative;
 }
+.headerRightItem {
+  cursor: pointer;
+}
+.languageDropDown p:hover {
+  color: #aeaeae;
+}
+
 .responsiveHeader {
   display: flex;
   align-items: center;
-  font-size: 0.817vw;
   gap: 1.361vw;
 }
 
+.languageDropDown {
+  width: 6.875vw;
+  height: 5vw;
+  background: white;
+  position: absolute;
+  border-radius: 0.833vw;
+  z-index: 9;
+  top: 1.5vw;
+  right: 0;
+  box-shadow: 0px 4px 86px 0px #0000000f;
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.headerDropDown {
+  cursor: pointer;
+}
+
 @media (max-width: 960px) {
-    .container {
-      max-width: 95vw;
-      padding: unset;
-      height: 9vw;
-    }
+  .container {
+    max-width: 95vw;
+    padding: 0;
+    height: 9vw;
+  }
 
   .containerLeftContent {
     font-size: 3.076vw;
@@ -46,4 +74,6 @@
   .responsiveHeader {
     display: none;
   }
+
+
 }

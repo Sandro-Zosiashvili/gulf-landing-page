@@ -13,7 +13,7 @@ const BusinessCardSection = () => {
                 <p className={styles.description}>
                     Gulf card-ი არის კორპორატიული ბარათი,
                     საწვავის ტალონებით შესყიდვის თანამედროვე შემცვლელი,
-                    რომელიცგაგიმარტივებთ ბიზნესის მართვას.
+                    რომელიც გაგიმარტივებთ ბიზნესის მართვას.
                 </p>
                 <div className={styles.button}>
                     <Button title={"ბარათის შეკვეთა"} mode={"dark"}/>

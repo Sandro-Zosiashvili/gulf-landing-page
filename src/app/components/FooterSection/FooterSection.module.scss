@@ -2,7 +2,7 @@
   max-width: 81.688vw;
   width: 100%;
   height: auto;
-  margin: 112px auto 60px auto;
+  margin: 7.624vw auto 4.084vw auto;
   display: flex;
   flex-direction: column;
   gap: 2.723vw;
@@ -13,9 +13,11 @@
   display: flex;
   justify-content: space-between;
 }
+
 .footerContent {
   width: 16.678vw;
 }
+
 .menuItem {
   display: flex;
   flex-direction: column;
@@ -23,11 +25,46 @@
 
 .footerSocialMedia {
   display: flex;
-.fitContent {
-  width: fit-content;
-}}
+
+  .fitContent {
+    width: fit-content;
+  }
+}
 
 .underFooter {
   width: 100%;
+}
+
+.MobileItems {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .container {
+    max-width: 95vw;
+  }
+
+  .footerContainer {
+    display: none;
+  }
+  .MobileItems {
+    display: flex;
+    flex-direction: column;
+    gap: 4.723vw;
+  }
+  .MobileItemsInfo {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+    gap: 2.723vw;
+    font-weight: 550;
+  }
+  .MobileItemsLinks {
+    display: flex;
+    gap: 2.723vw;
+  }
+  .MobileItemsLinks img {
+    cursor: pointer;
+  }
 }
 

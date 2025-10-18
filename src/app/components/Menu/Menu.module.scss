@@ -2,10 +2,12 @@
   max-width: 81.688vw;
   width: 100%;
   margin: 0 auto;
-  height: 8.376vh;
+  height: 4.500vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+
 }
 
 .mobileMenu {
@@ -24,8 +26,10 @@
 
   .container {
     max-width: 95vw;
+    padding-bottom: 2vw;
     height: auto;
-    margin-top: 2vw;
+    margin-top: 3vw;
+
   }
 
   .responsiveMenu {

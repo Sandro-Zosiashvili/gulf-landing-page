@@ -7,12 +7,15 @@
   background-repeat: no-repeat, no-repeat;
   background-size: 34.922vw auto, 100vw 120vw;
   padding: 9.53vw 0;
+  position: relative;
 }
+
 .row {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .wrapper {
   max-width: 81.688vw;
   width: 100%;
@@ -21,4 +24,48 @@
   display: flex;
   justify-content: space-between;
 
+}
+
+.advantageTitle {
+  position: absolute;
+  top: 2.042vw;
+  left: 3.404vw;
+  font-size: 2.451vw;
+  font-weight: bold;
+  color: black;
+
+}
+
+.mobileContent {
+  display: none;
+}
+
+.advantageMobileSwiper {
+  display: none;
+}
+@media (max-width: 960px) {
+  .wrapper {
+    display: none;
+  }
+  .advantageTitle {
+    font-size: 6.153vw;
+    top:  7.042vw;
+    color: white;
+  }
+  .container {
+    height: 152vw;
+    padding: 9.53vw 2.300vw;
+    background-size: 80.922vw auto, 100vw 500vw;
+    background-position: center calc(100% - 20px), top;
+  }
+
+  .mobileContent {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+  }
+.advantageMobileSwiper {
+  display: block;
+  margin-top: 20vw;
+}
 }

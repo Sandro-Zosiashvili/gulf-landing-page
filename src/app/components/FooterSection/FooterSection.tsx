@@ -27,6 +27,32 @@ const FooterSection = () => {
                     items={["*0007", "gulf@info.ge"]}
                 />
             </div>
+            <div className={styles.MobileItems}>
+                <FooterSectionItem
+                    title="მენიუ"
+                    items={["Gulf card", "GPS technology", "სათაურის ადგილი", "კონტაქტი"]}
+                />
+                <FooterSectionItem
+                    title="კომპანია"
+                    items={["ჩვენ შესახებ", "სერვისები", "პარტნიორები", "კარიერა"]}
+                />
+                <div className={styles.MobileItemsInfo}>
+                    <div>gulf@info.ge</div>
+                    <div>*0007</div>
+                </div>
+                <a className={styles.MobileItemsLinks}>
+                    <img src={"./icons/fcVector.svg" }style={{
+                        width: "5vw",
+                        height: "5vw",
+                    }} alt={"facebook logo link"}/>
+                    <img src={"./icons/instagramVector.svg"}
+                         style={{
+                             width: "5vw",
+                             height: "5vw",
+                         }} alt={"instagram logo link"}/>
+
+                </a>
+            </div>
             <UnderFooterSection/>
         </footer>
 

@@ -41,13 +41,14 @@ const NewsSwiper = ({news}: NewsSwiperProps) => {
                 </div>
             </div>
             <Swiper
-                modules={[Navigation, Autoplay]}
+                modules={[Navigation]}
                 spaceBetween={24}
                 slidesPerView={2}
-                autoplay={{
-                    delay: 7000,
-                    disableOnInteraction: false,
+                breakpoints={{
+                    0: {slidesPerView: 1,},
+                    960: {slidesPerView: 2},
                 }}
+
                 loop={true}
                 pagination={{
                     clickable: true,
@@ -66,10 +67,10 @@ const NewsSwiper = ({news}: NewsSwiperProps) => {
                         <article className={styles.wrapper}>
                             <div className={styles.cover}>
                                 <img src={item.image} style={{
-                                    width: "13.61111111111111vw",
-                                    height: "17.01388888888889vw",
+                                    width: "13.611vw",
+                                    height: "17.013vw",
                                     objectFit: "cover",
-                                    borderRadius: "1.08333333333333vw",
+                                    borderRadius: "1.083vw",
                                 }} alt={item.title}/>
                             </div>
                             <div className={styles.content}>

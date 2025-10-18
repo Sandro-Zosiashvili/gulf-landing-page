@@ -28,3 +28,16 @@
   font-weight: 500;
 
 }
+
+@media (max-width: 960px) {
+  .container {
+    max-width: 95vw;
+  }
+  .underContent {
+    font-size: 2vw;
+  }
+  .language {
+    font-size: 2vw;
+  }
+
+}
