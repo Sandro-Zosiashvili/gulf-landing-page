@@ -41,21 +41,19 @@ const FooterSection = () => {
                     <div>*0007</div>
                 </div>
                 <a className={styles.MobileItemsLinks}>
-                    <img
-                        src={"/icons/fcVector.svg"}
-                        style={{
-                            width: "5vw",
-                            height: "5vw",
-                        }}
-                        alt={"facebook logo link"}
+                    <img src={"/icons/fcVector.svg"}
+                         style={{
+                             width: "5vw",
+                             height: "5vw",
+                         }}
+                         alt={"facebook logo link"}
                     />
-                    <img
-                        src={"/icons/instagramVector.svg"}
-                        style={{
-                            width: "5vw",
-                            height: "5vw",
-                        }}
-                        alt={"instagram logo link"}
+                    <img src={"/icons/instagramVector.svg"}
+                         style={{
+                             width: "5vw",
+                             height: "5vw",
+                         }}
+                         alt={"instagram logo link"}
                     />
                 </a>
             </div>

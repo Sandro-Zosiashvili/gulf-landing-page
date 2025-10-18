@@ -14,7 +14,6 @@ const HeroSection = async () => {
             </div>
             <div className={styles.login}>
                 <Login/>
-
             </div>
         </section>
     )

@@ -36,7 +36,6 @@ const AdvantageMobileSwiper = ({advantages}: AdvantagesData) => {
                     advantages.map((item: Advantage, index: number) => (
                         <SwiperSlide className={styles.slideContent}>
                             <div className={styles.wrapper}>
-
                                 <div className={styles.header}>
                                     {index + 1}
                                 </div>

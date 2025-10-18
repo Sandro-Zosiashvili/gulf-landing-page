@@ -1,8 +1,7 @@
 .container {
   max-width: 81.688vw;
   width: 100%;
-  margin: 0 auto;
-  margin-top: 11.572vw;
+  margin:11.572vw auto 0 auto;
   display: flex;
   flex-direction: column;
   gap: 2.246vw;
@@ -12,5 +11,4 @@
     max-width: 95vw;
     gap: 7.246vw;
   }
-
 }

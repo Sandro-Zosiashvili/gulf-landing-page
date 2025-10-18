@@ -4,14 +4,14 @@
   background-color: #F5F5F5;
   outline: none;
   width: 100%;
-  height: 3.3333333333333335vw;
+  height: 3.333vw;
   border: solid 1px #d8d8d8;
   padding-left: 1.25vw;
   font-style: normal;
   font-weight: 450;
-  font-size: 0.9722222222222222vw;
-  line-height: 1.3194444444444444vw;
-  margin-top: 0.5555555555555556vw;
+  font-size: 0.972vw;
+  line-height: 1.319vw;
+  margin-top: 0.555vw;
 }
 
 .checkBox {
@@ -25,7 +25,6 @@
     border-radius: 15px;
     width: 1.361vw;
     height: 1.361vw;
-
   }
 }
 
@@ -41,8 +40,7 @@
 }
 
 .save {
-  font-size: 0.9722222222222222vw;
-
+  font-size: 0.972vw;
 }
 
 @media (max-width: 960px) {
@@ -63,7 +61,6 @@
     input[type="checkbox"] {
       width: 5vw;
       height: 5vw;
-
     }
   }
 
@@ -71,7 +68,7 @@
     top: 8vw;
     right: 2vw;
   }
-  .visibility  img {
+  .visibility img {
     width: 6vw !important;
     height: 6vw !important;
   }

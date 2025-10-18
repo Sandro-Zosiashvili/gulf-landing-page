@@ -14,8 +14,6 @@ const PricesHeader = () => {
                 <Button title={"არქივი"} mode={"withIcon"} iconSrc={'./icons/right-svg-prices.svg'}/>
             </div>
         </div>
-
-
     )
 }
 

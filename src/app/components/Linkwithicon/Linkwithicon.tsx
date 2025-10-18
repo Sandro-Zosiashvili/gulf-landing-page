@@ -8,14 +8,12 @@ interface Props {
 }
 
 const LinkWithIcon = (props: Props) => {
-    // ავტომატურად ვამატებთ /icons/ prefix-ს
-    const iconPath = props.icon.startsWith('/') ? props.icon : `/icons/${props.icon}`;
 
     return (
         <a href={props.href} className={styles.container}>
             <span>{props.title}</span>
             <img
-                src={iconPath}
+                src={`/icons/${props.icon}`}
                 style={{
                     width: props.medium ? "0.613vw" : "0.408vw",
                     height: props.medium ? "0.613vw" : "0.408vw",

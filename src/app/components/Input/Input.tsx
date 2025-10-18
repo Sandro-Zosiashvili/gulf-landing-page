@@ -12,7 +12,6 @@ interface Props {
 }
 
 const Input = (props: Props) => {
-
     const [visibility, setVisibility] = useState(true);
 
     return (

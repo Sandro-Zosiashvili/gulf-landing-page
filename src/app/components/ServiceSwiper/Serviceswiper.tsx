@@ -21,7 +21,6 @@ export interface ServicesData {
 const ServiceSwiper = ({service}: ServicesData) => {
     const [isLastSlide, setIsLastSlide] = useState(false);
     const [isFirstSlide, setIsFirstSlide] = useState(true);
-    console.log(isLastSlide);
 
     return (
         <div className={styles.swiperWrapper}>

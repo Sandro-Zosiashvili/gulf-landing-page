@@ -23,9 +23,7 @@ const FooterSectionItem: React.FC<Props> = ({title, items, icon}) => {
                     }} alt="icon"/>
                 </div>
             </div>
-
             {icon ? (
-
                 <div className={styles.fitGap}>
                     <div className={styles.fitContent}>
                         <Button iconSrc={'/icons/fcVector.svg'} mode={"onlyIcon"}/>
@@ -36,19 +34,13 @@ const FooterSectionItem: React.FC<Props> = ({title, items, icon}) => {
                 </div>
 
             ) : (
-
                 active && (
-                    <>
-                        <ul className={styles.listResponsive}>
-                            {items?.map((item, index) => (
-                                <li key={index} className={styles.listItem}>{item}</li>
-                            ))}
-                        </ul>
-                    </>
-
+                    <ul className={styles.listResponsive}>
+                        {items?.map((item, index) => (
+                            <li key={index} className={styles.listItem}>{item}</li>
+                        ))}
+                    </ul>
                 )
-
-
             )}
             <ul className={styles.list}>
                 {items?.map((item, index) => (

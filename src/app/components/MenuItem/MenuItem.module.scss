@@ -9,7 +9,6 @@
   position: relative;
   cursor: pointer;
   list-style: none;
-
 }
 
 .menuItem::after {
@@ -19,7 +18,7 @@
   bottom: -0.204vw;
   width: 0;
   height: 0.129vh;
-  background-color: currentColor; /* ხაზის ფერი იგივე რაც ტექსტის */
+  background-color: currentColor;
   transition: width 0.2s ease;
 }
 

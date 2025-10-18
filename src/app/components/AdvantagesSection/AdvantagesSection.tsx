@@ -34,7 +34,7 @@ const AdvantagesSection = async () => {
             <div>
             </div>
             <div className={styles.advantageMobileSwiper}>
-                <AdvantageMobileSwiper advantages={data}   />
+                <AdvantageMobileSwiper advantages={data}/>
             </div>
         </div>
     );

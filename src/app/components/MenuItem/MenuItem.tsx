@@ -8,7 +8,6 @@ interface Item {
 }
 
 const MenuItem = () => {
-
     const data: Item[] = [
         { title: 'GULF CARD', path: '', icon: "/icons/language-drop-down-icon.svg" },
         { title: 'საერთაშორისო ბარათები', path: '' },

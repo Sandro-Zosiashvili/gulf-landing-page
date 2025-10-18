@@ -15,7 +15,6 @@ const AdvantagesItem = (props: Props) => {
             <p className={styles.title}>
                 {props.title}
             </p>
-
             <p className={styles.description}>
                 {props.description}
             </p>

@@ -4,10 +4,11 @@
   padding: 30px 20px;
   border-radius: 20px;
   overflow-x: scroll;
-  justify-content:  space-between;
+  justify-content: space-between;
   width: 100%;
   scroll-behavior: smooth;
 }
+
 .container::-webkit-scrollbar {
   display: none;
 }
@@ -22,6 +23,7 @@
   gap: 20px;
   padding-left: 10px;
 }
+
 .priceCardNoneBorder {
   background-color: #f7f9fb;
   font-weight: 600;
@@ -31,6 +33,7 @@
   gap: 10px;
   padding-left: 11px;
 }
+
 .price {
   font-size: 18px;
   font-weight: bold;
@@ -41,17 +44,18 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 @media (max-width: 960px) {
   .container {
-    font-size: 3.5897435897435894vw;
+    font-size: 3.589vw;
     border-radius: 10px;
+  }
 
-  }
   .price {
-    font-size: 5.5897435897435894vw;
+    font-size: 5.589vw;
   }
+
   .priceCard {
     padding-left: 20px;
   }
-
 }

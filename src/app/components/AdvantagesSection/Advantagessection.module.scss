@@ -23,7 +23,6 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-
 }
 
 .advantageTitle {
@@ -33,7 +32,6 @@
   font-size: 2.451vw;
   font-weight: bold;
   color: black;
-
 }
 
 .mobileContent {
@@ -43,13 +41,14 @@
 .advantageMobileSwiper {
   display: none;
 }
+
 @media (max-width: 960px) {
   .wrapper {
     display: none;
   }
   .advantageTitle {
     font-size: 6.153vw;
-    top:  7.042vw;
+    top: 7.042vw;
     color: white;
   }
   .container {
@@ -58,14 +57,13 @@
     background-size: 80.922vw auto, 100vw 500vw;
     background-position: center calc(100% - 20px), top;
   }
-
   .mobileContent {
     display: flex;
     overflow-x: scroll;
     gap: 10px;
   }
-.advantageMobileSwiper {
-  display: block;
-  margin-top: 20vw;
-}
+  .advantageMobileSwiper {
+    display: block;
+    margin-top: 20vw;
+  }
 }

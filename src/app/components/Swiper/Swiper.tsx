@@ -24,8 +24,7 @@ const MySwiper = ({ banners }: MySwiperProps) => {
 
     return (
         <div className={styles.swiperWrapper}>
-            <Swiper
-                modules={[Navigation, Autoplay]}
+            <Swiper modules={[Navigation, Autoplay]}
                 spaceBetween={10}
                 centeredSlides={true}
                 autoplay={{
