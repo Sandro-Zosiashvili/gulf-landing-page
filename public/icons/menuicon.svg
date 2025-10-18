@@ -1,4 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M.75 1.325C.75.869 1.12.5 1.575.5h14.646a.825.825 0 0 1 0 1.65H1.575a.825.825 0 0 1-.825-.825ZM.75 5.909c0-.456.37-.825.825-.825h14.646a.825.825 0 0 1 0 1.65H1.575a.825.825 0 0 1-.825-.825ZM.75 10.492c0-.456.37-.826.825-.826h14.646a.825.825 0 0 1 0 1.65H1.575a.825.825 0 0 1-.825-.825Z" fill="#1A2A3F"/>
-</svg>
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#313445" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#313445" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#313445" stroke-width="2" stroke-linecap="round"></path> </g></svg>
