@@ -36,8 +36,20 @@
   gap: 1.361vw;
 }
 
+
 @media (max-width: 960px) {
   .container {
-    display: none;
+    max-width: 95vw;
+    height: auto;
+    width: 100%;
+    border-radius: 6vw;
+    padding: 8.846153846153847vw 4.153846153846154vw;
+  }
+  .loginTitle {
+    font-size: 4.102564102564102vw;
+  }
+  .button {
+    gap: 6.361vw;
+    margin-top: 10vw;
   }
 }

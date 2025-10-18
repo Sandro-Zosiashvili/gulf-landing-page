@@ -9,8 +9,8 @@ const Header = () => {
         <>
             <header className={styles.container}>
                 <div className={styles.containerLeftContent}>
-                    <Linkwithicon title={"Gulf Retail"} icon={"./icons/link.svg"}/>
-                    <Linkwithicon title={"Sun Stores"} icon={"./icons/link.svg"}/>
+                    <Linkwithicon title={"Gulf Retail"} icon={"link.svg"}/>
+                    <Linkwithicon title={"Sun Stores"} icon={"link.svg"}/>
                 </div>
                 <nav className={styles.headerRightContent}>
                     <div className={styles.responsiveHeader}>
@@ -21,7 +21,7 @@ const Header = () => {
                     <div onClick={() => setActive(!active)} className={styles.headerDropDown}>
                         <Linkwithicon
                             title={"Ge"}
-                            icon={"./icons/language-drop-down-icon.svg"}
+                            icon={"language-drop-down-icon.svg"}
                             medium={true}
                         />
                         {

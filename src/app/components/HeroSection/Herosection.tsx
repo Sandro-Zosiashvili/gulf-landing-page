@@ -12,7 +12,10 @@ const HeroSection = async () => {
             <div className={styles.swiper}>
                 <MySwiper banners={banners}/>
             </div>
-            <Login/>
+            <div className={styles.login}>
+                <Login/>
+
+            </div>
         </section>
     )
 }

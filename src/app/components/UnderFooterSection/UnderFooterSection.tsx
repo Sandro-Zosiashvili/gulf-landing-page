@@ -14,7 +14,7 @@ const UnderFooterSection = () => {
             </div>
             <div className={styles.language}>
                 <p>ქართლი</p>
-                <img src={'./icons/languageVector.svg'} alt={'language-drop-down-icon'} width="10px" height="10px" />
+                <img src={'/icons/languageVector.svg'} alt={'language-drop-down-icon'} width="10px" height="10px" />
             </div>
         </footer>
     )

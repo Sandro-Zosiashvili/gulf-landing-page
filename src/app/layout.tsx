@@ -3,6 +3,7 @@ import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header/Header";
 import Menu from "@/app/components/Menu/Menu";
+import FooterSection from "@/app/components/FooterSection/FooterSection";
 
 
 const geistSans = Geist({
@@ -36,9 +37,10 @@ export default function RootLayout({
             <title>Gulf Business</title>
         </head>
         <body suppressHydrationWarning={true}>
-            <Header/>
-            <Menu/>
+        <Header/>
+        <Menu/>
         {children}
+        <FooterSection/>
         </body>
         </html>
     );

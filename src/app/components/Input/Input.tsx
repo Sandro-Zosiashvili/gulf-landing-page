@@ -42,7 +42,7 @@ const Input = (props: Props) => {
                     <div className={styles.visibility}
                         onClick={() => setVisibility(!visibility)}
                     >
-                        <img src={visibility ? './icons/visibility.svg' : './icons/disability.svg'}
+                        <img src={visibility ? '/icons/visibility.svg' : '/icons/disability.svg'}
                              alt="password-visibility"
                              style={{
                                  width: '1.634vw',

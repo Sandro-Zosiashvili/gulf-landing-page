@@ -13,6 +13,7 @@
   line-height: 1.3194444444444444vw;
   margin-top: 0.5555555555555556vw;
 }
+
 .checkBox {
   display: flex;
   gap: 0.681vw;
@@ -27,6 +28,7 @@
 
   }
 }
+
 .wrapper {
   position: relative;
 }
@@ -40,6 +42,39 @@
 
 .save {
   font-size: 0.9722222222222222vw;
+
+}
+
+@media (max-width: 960px) {
+  .input {
+    font-size: 3.589vw;
+    height: 12.307vw;
+    margin-top: 5.051vw;
+    padding-left: 5.384vw;
+  }
+  .save {
+    font-size: 3.5897435897435894vw;
+  }
+
+  .checkBox {
+    gap: 3vw;
+    margin-top: 3vw;
+
+    input[type="checkbox"] {
+      width: 5vw;
+      height: 5vw;
+
+    }
+  }
+
+  .visibility {
+    top: 8vw;
+    right: 2vw;
+  }
+  .visibility  img {
+    width: 6vw !important;
+    height: 6vw !important;
+  }
 
 }
 

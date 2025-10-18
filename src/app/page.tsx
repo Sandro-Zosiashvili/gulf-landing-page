@@ -16,7 +16,6 @@ export default async function Home() {
             <AdvantagesSection/>
             <NewsSection/>
             <BusinessCardSection/>
-            <FooterSection/>
         </div>
     );
 }

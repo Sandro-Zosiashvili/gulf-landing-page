@@ -17,7 +17,7 @@ const FooterSectionItem: React.FC<Props> = ({title, items, icon}) => {
             <div className={styles.responsiveTitle} onClick={() => setActive(!active)}>
                 <h3 className={styles.title}>{title}</h3>
                 <div className={styles.titleDows}>
-                    <img src={active ? "./icons/up.svg" : "./icons/down.svg"} style={{
+                    <img src={active ? "/icons/up.svg" : "/icons/down.svg"} style={{
                         width: "2.564vw",
                         height: "1.282vw",
                     }} alt="icon"/>
@@ -28,10 +28,10 @@ const FooterSectionItem: React.FC<Props> = ({title, items, icon}) => {
 
                 <div className={styles.fitGap}>
                     <div className={styles.fitContent}>
-                        <Button iconSrc={'./icons/fcVector.svg'} mode={"onlyIcon"}/>
+                        <Button iconSrc={'/icons/fcVector.svg'} mode={"onlyIcon"}/>
                     </div>
                     <div className={styles.fitContent}>
-                        <Button iconSrc={'./icons/instagramVector.svg'} mode={"onlyIcon"}/>
+                        <Button iconSrc={'/icons/instagramVector.svg'} mode={"onlyIcon"}/>
                     </div>
                 </div>
 
