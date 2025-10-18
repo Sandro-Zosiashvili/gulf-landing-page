@@ -1,5 +1,6 @@
+"use client"
 import styles from './Logo.module.scss';
-import Image from 'next/image';
+import {useRouter} from "next/navigation";
 
 interface Props {
     title?: boolean;
@@ -7,6 +8,7 @@ interface Props {
 }
 
 const Logo = (props: Props) => {
+const router = useRouter();
 
     return (
         <figure className={styles.container}>
@@ -19,6 +21,7 @@ const Logo = (props: Props) => {
                     />
                 ) : (
                     <img className={styles.mainLogo}
+                         onClick={() => router.push("/")}
                          src={"/icons/gulf-logo.svg"}
                          style={{width: '2.519vw', height: '4.381vh'}}
                          alt="Main Logo"

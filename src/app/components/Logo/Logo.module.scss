@@ -10,7 +10,9 @@
   height: 1.546vw;
   background-color: #F2F2F2;
 }
-
+.mainLogo {
+  cursor: pointer;
+}
 @media (max-width: 960px) {
   .titleImg {
     width: 21.282vw !important;
