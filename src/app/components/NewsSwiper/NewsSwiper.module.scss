@@ -1,8 +1,9 @@
+@import "@/styles/colors.scss";
+
 .swiperWrapper {
   position: relative;
   width: 100%;
 }
-
 
 .mySwiper {
   width: 100%;
@@ -16,21 +17,17 @@
   align-items: center;
   justify-content: center;
   font-size: 1.361vw;
-  background: #eee;
+  background: $gray-extra-light;
   border-radius: 10px;
-
-
 }
 
 .slideContent {
   padding: 0.613vw 0.800vw;
-  width: 40.27777777777778vw;
+  width: 40.277vw;
   height: 18.125vw;
-  border-radius: 2.083333333333333vw;
-  background-color: #ffffff;
+  border-radius: 2.083vw;
+  background-color: $white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-
-
 }
 
 .title {
@@ -53,7 +50,7 @@
   :global(.custom-next-two) {
     width: 4vw;
     height: 4vw;
-    background: #192a40;
+    background: $dark-blue-gray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,11 +58,11 @@
     cursor: pointer;
 
     &:hover {
-      background-color: #2a3a50;
+      background-color: $steel-blue-dark;
     }
 
     &:active {
-      background-color: #1a2b41;
+      background-color: $navy-dark;
     }
   }
 }
@@ -85,11 +82,11 @@
   justify-content: space-around;
 }
 .cover {
-  width: 13.61111111111111vw;
-  height: 17.01388888888889vw;
+  width: 13.611vw;
+  height: 17.013vw;
 }
 .date {
-  color: #a9adc1;
+  color: $gray-blue-light;
   font-size: 0.681vw;
   font-weight: 500;
 }

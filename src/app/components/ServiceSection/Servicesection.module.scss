@@ -1,7 +1,9 @@
+@import "@/styles/colors.scss";
+
 .container {
   padding: 4.697vw 0;
   margin-top: 8.713vw;
-  background-color: #f7f9fb;
+  background-color: $lightGray;
   height: 50.102vw;
 }
 .wrapper {
@@ -16,6 +18,6 @@
     max-width: 95vw;
   }
   .container {
-    height: 83.48717948717949vw;
+    height: 83.487vw;
   }
 }

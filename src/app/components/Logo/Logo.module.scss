@@ -1,3 +1,5 @@
+@import "@/styles/colors.scss";
+
 .container {
   display: flex;
   align-items: center;
@@ -8,7 +10,7 @@
 .middleLine {
   width: 0.136vw;
   height: 1.546vw;
-  background-color: #F2F2F2;
+  background-color: $gray-lighter-four;
 }
 .mainLogo {
   cursor: pointer;

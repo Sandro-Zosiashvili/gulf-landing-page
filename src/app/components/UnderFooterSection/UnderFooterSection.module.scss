@@ -1,9 +1,11 @@
+@import "@/styles/colors.scss";
+
 
 .container {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  color: #868686;
+  color: $gray-mid;
   max-width: 71.477vw;
 }
 

@@ -1,6 +1,8 @@
+@import "@/styles/colors.scss";
+
 .container {
   display: flex;
-  background-color: #f7f9fb;
+  background-color: $lightGray;
   padding: 30px 20px;
   border-radius: 20px;
   overflow-x: scroll;
@@ -14,8 +16,8 @@
 }
 
 .priceCard {
-  background-color: #f7f9fb;
-  border-left: 1px solid #eaf0f8;
+  background-color: $lightGray;
+  border-left: 1px solid $blue-gray-lightest;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -25,7 +27,7 @@
 }
 
 .priceCardNoneBorder {
-  background-color: #f7f9fb;
+  background-color: $lightGray;
   font-weight: 600;
   display: flex;
   flex-direction: column;

@@ -1,10 +1,13 @@
+@import "@/styles/colors.scss";
+
+
 .container {
   max-width: 14.636vw;
 }
 .header {
   width: 3.333vw;
   height: 3.333vw;
-  border: 1px solid #000428;
+  border: 1px solid $blackBlue;
   border-radius: 50%;
   font-size: 1.498vw;
 

@@ -1,3 +1,6 @@
+@import "@/styles/colors.scss";
+
+
 .container {
   max-width: 81.688vw;
   width: 100%;
@@ -39,7 +42,7 @@
     justify-content: center;
     width: 10.256vw;
     height: 10.256vw;
-    background-color: #f7f9fc;
+    background-color: $off-white-blue;
     border-radius: 50px;
     cursor:  pointer;
 
@@ -49,7 +52,7 @@
 .mobileMenuPopup {
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: $white;
   position: absolute;
   z-index: 99999999;
   left: 0;

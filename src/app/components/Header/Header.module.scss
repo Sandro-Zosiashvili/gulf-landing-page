@@ -1,14 +1,16 @@
+@import "@/styles/colors.scss";
+
 .container {
   width: 100%;
   z-index: 999;
-  background: white;
+  background: $white;
   padding-left: 9.19vw;
   padding-right: 9.19vw;
   height: 3.6vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $gray-light-three;
   margin: 0 auto;
 }
 
@@ -30,7 +32,7 @@
   cursor: pointer;
 }
 .languageDropDown p:hover {
-  color: #aeaeae;
+  color: $gray-medium-dark;
 }
 
 .responsiveHeader {
@@ -42,13 +44,13 @@
 .languageDropDown {
   width: 6.875vw;
   height: 5vw;
-  background: white;
+  background: $white;
   position: absolute;
   border-radius: 0.833vw;
   z-index: 9;
   top: 1.5vw;
   right: 0;
-  box-shadow: 0px 4px 86px 0px #0000000f;
+  box-shadow: 0px 4px 86px 0px $black-transparent;
   display: flex;
   flex-direction:  column;
   align-items: center;
@@ -81,6 +83,5 @@
     height: 20vw;
     font-size: 4vw;
   }
-
 
 }

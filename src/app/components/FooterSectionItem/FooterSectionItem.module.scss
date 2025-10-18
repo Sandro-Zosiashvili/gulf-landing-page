@@ -1,3 +1,5 @@
+@import "@/styles/colors.scss";
+
 .footerSectionItem {
   width: 100%;
   display: flex;
@@ -18,7 +20,7 @@
 }
 .listItem {
   font-size: 1vw;
-  margin-bottom: 1.0416666666666665vw;
+  margin-bottom: 1.041vw;
   cursor: pointer;
 }
 .responsiveTitle {
@@ -52,7 +54,7 @@
   }
   .listItem {
     margin-top: 4vw;
-    color: #767676;
+    color: $gray-medium;
     margin-left: 3vw;
   }
   .list {

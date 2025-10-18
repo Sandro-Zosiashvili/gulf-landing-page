@@ -1,3 +1,5 @@
+@import "@/styles/colors.scss";
+
 .swiperWrapper {
   position: relative;
   width: 100%;
@@ -5,7 +7,7 @@
 }
 .counter {
   z-index: 10;
-  background-color: #FFFFFF33;
+  background-color: $white-transparent-20;
   border-radius: 57px;
   font-size: 0.953vw;
   font-weight: bolder;
@@ -16,11 +18,11 @@
   justify-content: center;
   line-height: 2.042vw;
   letter-spacing: 0.34vw;
-  color: #888888;
+  color: $gray-medium;
 }
 
 .currentSlide {
-  color: #fff;
+  color: $gray-extra-light;
 }
 
 .mySwiper {
@@ -33,7 +35,7 @@
   align-items: center;
   justify-content: center;
   font-size: 1.361vw;
-  background: #eee;
+  background: $gray-extra-light;
   border-radius: 10px;
 }
 
@@ -58,7 +60,7 @@
 
 .title {
   font-size: 2.723vw;
-  color: #fff;
+  color: $gray-extra-light;
   font-weight: bolder;
   opacity: 0;
   transform: translateY(30px);
@@ -89,7 +91,7 @@
   :global(.custom-next) {
     width: 3.744vw;
     height: 3.744vw;
-    background: #ffffff1a;
+    background: $white-transparent-10;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +102,7 @@
 
 @media (max-width: 960px) {
   .swiperWrapper {
-    height: 63.589743589743584vw;
+    height: 63.589vw;
   }
 
   .counter {
@@ -114,7 +116,6 @@
     padding-left: 6.153vw;
     padding-bottom: 10vw;
     border-radius: 35px;
-
   }
 
   .rightPagination {
